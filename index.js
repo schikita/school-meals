@@ -179,3 +179,20 @@ document.querySelectorAll('.single-column').forEach(column => {
   column.style.setProperty('height', '200%');
   column.innerHTML = column.innerHTML + column.innerHTML;
 });
+
+let currentIndex = 0;
+
+function moveSlide(direction) {
+  const slides = document.querySelectorAll('.slide');
+  currentIndex = (currentIndex + direction + slides.length) % slides.length;
+
+  const slidesContainer = document.querySelector('.slides');
+  slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === currentIndex);
+  });
+}
+
+
+

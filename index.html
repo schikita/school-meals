@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Здоровое питание в школах Беларуси</title>
     <link rel="stylesheet" href="style.css" />
+
+    
   </head>
   <body>
     <!-- Loader -->
-    <div class="loader" id="loader">      
-      <img src="/assets/img/logo-leave-report.png" alt="">
+    <div class="loader" id="loader">
+      <img src="/assets/img/logo-leave-report.png" alt="" />
     </div>
 
     <!-- Custom Cursor -->
@@ -19,22 +21,40 @@
     <!-- Navigation -->
     <nav id="navbar">
       <div class="nav-container">
-        <a href="https://www.sb.by/" class="logo" target="_blank" rel="noopener noreferrer">
-          <img src="./assets/img/logo.png" alt="СБ. Беларусь сегодня — логотип" width="36" height="36" loading="eager"
-          decoding="async" fetchpriority="high">
-        <span class="logo-text">SB.BY</span>
+        <!-- Логотип -->
+        <a
+          href="https://www.sb.by/"
+          class="logo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./assets/img/logo.png"
+            alt="СБ. Беларусь сегодня — логотип"
+            width="36"
+            height="36"
+            loading="eager"
+            decoding="async"
+            fetchpriority="high"
+          />
+          <span class="logo-text">SB.BY</span>
+        </a>
+
+        <!-- Навигация -->
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">Галерея</a></li>
+          <li><a href="#menu">Меню</a></li>
+          <li><a href="#features">Преимущества</a></li>
+          <li><a href="#interview">Интервью</a></li>
+          <li><a href="#contact">Проекты</a></li>
+        </ul>
+
+        <!-- Гамбургер справа -->
         <button class="mobile-menu-toggle" id="mobileMenuToggle">
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <ul class="nav-links" id="navLinks">      
-          <li><a href="#about">Галерея</a></li>
-          <li><a href="#menu">Меню</a></li>
-          <li><a href="#features">Преимущества</a></li>
-          <li><a href="#features">Интервью</a></li>
-          <li><a href="#contact">Проекты</a></li>
-        </ul>
       </div>
     </nav>
 
@@ -48,7 +68,8 @@
         <div class="hero-text">
           <h1>Здоровое питание для будущего Беларуси</h1>
           <p>
-            Качественное и полезное питание для школьников — в каждой школе нашей страны
+            Качественное и полезное питание для школьников — в каждой школе
+            нашей страны
           </p>
           <a href="#menu" class="cta-button">Посмотреть меню</a>
         </div>
@@ -59,97 +80,122 @@
               height: 500px;
               background: url('/assets/img/eat-1.jpg');
               background-repeat: no-repeat;
-              background-size:cover;
+              background-size: cover;
               border-radius: 20px;
               display: flex;
               align-items: center;
               justify-content: center;
               font-size: 5rem;
             "
-          >           
-          </div>
+          ></div>
         </div>
       </div>
     </section>
 
-  <section class="food-gallery">
-  <div class="main">
-    <div class="single-column">
-      <div class="img-wrap">
-        <img src="./assets/img/food-gal/eat-2.jpg" alt="Школьные завтраки">
-        <span class="caption">#Школьные завтраки</span>
-      </div>
-      <div class="img-wrap">
-        <img src="./assets/img/food-gal/eat-3.jpg" alt="Сбалансированное меню">
-        <span class="caption">#Сбалансированное меню</span>
-      </div>
-      <div class="img-wrap">
-        <img src="./assets/img/food-gal/eat-4.jpg" alt="Овощи и фрукты">
-        <span class="caption">#Овощи и фрукты</span>
-      </div>
-      <div class="img-wrap">
-        <img src="./assets/img/food-gal/eat-5.jpg" alt="Школьная столовая">
-        <span class="caption">#Школьная столовая</span>
-      </div>
-    </div>
-
-    <div class="single-column">
-      <div class="img-wrap">
-        <img src="./assets/img/food-gal/eat-6.jpg" alt="Полезные перекусы">
-        <span class="caption">#Полезные перекусы</span>
-      </div>
-      <div class="img-wrap">
-        <img src="./assets/img/food-gal/eat-7.jpg" alt="Здоровый обед">
-        <span class="caption">#Здоровый обед</span>
-      </div>
-      <div class="img-wrap">
-        <img src="./assets/img/food-gal/eat-8.jpg" alt="Детское питание">
-        <span class="caption">#Детское питание</span>
-      </div>
-      <div class="img-wrap">
-        <img src="./assets/img/food-gal/eat-9.jpg" alt="Фрукты каждый день">
-        <span class="caption">#Фрукты каждый день</span>
-      </div>
-    </div>
-      <div class="single-column">
-      <div class="img-wrap">
-        <img src="./assets/img/food-gal/eat-10.jpg" alt="Полезные перекусы">
-        <span class="caption">#Полезные перекусы</span>
-      </div>
-      <div class="img-wrap">
-        <img src="./assets/img/food-gal/eat-11.jpg" alt="Здоровый обед">
-        <span class="caption">#Здоровый обед</span>
-      </div>
-      <div class="img-wrap">
-        <img src="./assets/img/food-gal/eat-12.jpg" alt="Детское питание">
-        <span class="caption">#Детское питание</span>
-      </div>
-      <div class="img-wrap">
-        <img src="./assets/img/food-gal/eat-13.jpg" alt="Фрукты каждый день">
-        <span class="caption">#Фрукты каждый день</span>
-      </div>
-    </div>
+    <section class="food-gallery">
+      <div class="main">
         <div class="single-column">
-      <div class="img-wrap">
-        <img src="./assets/img/food-gal/eat-14.jpg" alt="Полезные перекусы">
-        <span class="caption">#Полезные перекусы</span>
-      </div>
-      <div class="img-wrap">
-        <img src="./assets/img/food-gal/eat-15.jpg" alt="Здоровый обед">
-        <span class="caption">#Здоровый обед</span>
-      </div>
-      <div class="img-wrap">
-        <img src="./assets/img/food-gal/eat-3.jpg" alt="Детское питание">
-        <span class="caption">#Детское питание</span>
-      </div>
-      <div class="img-wrap">
-        <img src="./assets/img/food-gal/eat-4.jpg" alt="Фрукты каждый день">
-        <span class="caption">#Фрукты каждый день</span>
-      </div>
-    </div>
-  </div>
-</section>
+          <div class="img-wrap">
+            <img
+              src="./assets/img/food-gal/eat-2.jpg"
+              alt="Школьные завтраки"
+            />
+            <span class="caption">#Школьные завтраки</span>
+          </div>
+          <div class="img-wrap">
+            <img
+              src="./assets/img/food-gal/eat-3.jpg"
+              alt="Сбалансированное меню"
+            />
+            <span class="caption">#Сбалансированное меню</span>
+          </div>
+          <div class="img-wrap">
+            <img src="./assets/img/food-gal/eat-4.jpg" alt="Овощи и фрукты" />
+            <span class="caption">#Овощи и фрукты</span>
+          </div>
+          <div class="img-wrap">
+            <img
+              src="./assets/img/food-gal/eat-5.jpg"
+              alt="Школьная столовая"
+            />
+            <span class="caption">#Школьная столовая</span>
+          </div>
+        </div>
 
+        <div class="single-column">
+          <div class="img-wrap">
+            <img
+              src="./assets/img/food-gal/eat-6.jpg"
+              alt="Полезные перекусы"
+            />
+            <span class="caption">#Полезные перекусы</span>
+          </div>
+          <div class="img-wrap">
+            <img src="./assets/img/food-gal/eat-7.jpg" alt="Здоровый обед" />
+            <span class="caption">#Здоровый обед</span>
+          </div>
+          <div class="img-wrap">
+            <img src="./assets/img/food-gal/eat-8.jpg" alt="Детское питание" />
+            <span class="caption">#Детское питание</span>
+          </div>
+          <div class="img-wrap">
+            <img
+              src="./assets/img/food-gal/eat-9.jpg"
+              alt="Фрукты каждый день"
+            />
+            <span class="caption">#Фрукты каждый день</span>
+          </div>
+        </div>
+        <div class="single-column">
+          <div class="img-wrap">
+            <img
+              src="./assets/img/food-gal/eat-10.jpg"
+              alt="Полезные перекусы"
+            />
+            <span class="caption">#Полезные перекусы</span>
+          </div>
+          <div class="img-wrap">
+            <img src="./assets/img/food-gal/eat-11.jpg" alt="Здоровый обед" />
+            <span class="caption">#Здоровый обед</span>
+          </div>
+          <div class="img-wrap">
+            <img src="./assets/img/food-gal/eat-12.jpg" alt="Детское питание" />
+            <span class="caption">#Детское питание</span>
+          </div>
+          <div class="img-wrap">
+            <img
+              src="./assets/img/food-gal/eat-13.jpg"
+              alt="Фрукты каждый день"
+            />
+            <span class="caption">#Фрукты каждый день</span>
+          </div>
+        </div>
+        <div class="single-column">
+          <div class="img-wrap">
+            <img
+              src="./assets/img/food-gal/eat-14.jpg"
+              alt="Полезные перекусы"
+            />
+            <span class="caption">#Полезные перекусы</span>
+          </div>
+          <div class="img-wrap">
+            <img src="./assets/img/food-gal/eat-15.jpg" alt="Здоровый обед" />
+            <span class="caption">#Здоровый обед</span>
+          </div>
+          <div class="img-wrap">
+            <img src="./assets/img/food-gal/eat-3.jpg" alt="Детское питание" />
+            <span class="caption">#Детское питание</span>
+          </div>
+          <div class="img-wrap">
+            <img
+              src="./assets/img/food-gal/eat-4.jpg"
+              alt="Фрукты каждый день"
+            />
+            <span class="caption">#Фрукты каждый день</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Stats Section -->
     <section class="stats" id="stats">
@@ -453,117 +499,138 @@
       </div>
     </section>
 
-<section class="interviews-grid">
-  <div class="card">
-    <div class="card-front" style="background-image: url('./assets/img/int-1.jpeg');">
-      <h3>Представитель школы</h3>
-    </div>
-    <div class="card-back">
-      <h3>Представитель школы</h3>
-      <p>
-        «Качественное питание — это не только здоровье, но и успеваемость детей.
-        Мы видим, что ученики стали энергичнее и внимательнее на уроках.»
-      </p>
-    </div>
-  </div>
+    <section class="interviews-grid">
+      <div class="card">
+        <div
+          class="card-front"
+          style="background-image: url('./assets/img/int-1.jpeg')"
+        >
+          <h3>Представитель школы</h3>
+        </div>
+        <div class="card-back">
+          <h3>Представитель школы</h3>
+          <p>
+            «Качественное питание — это не только здоровье, но и успеваемость
+            детей. Мы видим, что ученики стали энергичнее и внимательнее на
+            уроках.»
+          </p>
+        </div>
+      </div>
 
-  <div class="card">
-    <div class="card-front" style="background-image: url('./assets/img/int-2.jpg');">
-      <h3>Учитель</h3>
-    </div>
-    <div class="card-back">
-      <h3>Учитель</h3>
-      <p>
-        «Когда дети сытые и довольные, уроки проходят продуктивнее.
-        Сбалансированное питание помогает лучше концентрироваться.»
-      </p>
-    </div>
-  </div>
+      <div class="card">
+        <div
+          class="card-front"
+          style="background-image: url('./assets/img/int-2.jpg')"
+        >
+          <h3>Учитель</h3>
+        </div>
+        <div class="card-back">
+          <h3>Учитель</h3>
+          <p>
+            «Когда дети сытые и довольные, уроки проходят продуктивнее.
+            Сбалансированное питание помогает лучше концентрироваться.»
+          </p>
+        </div>
+      </div>
 
-  <div class="card">
-    <div class="card-front" style="background-image: url('./assets/img/int-3.jpg');">
-      <h3>Министерство образования</h3>
-    </div>
-    <div class="card-back">
-      <h3>Министерство образования</h3>
-      <p>
-        «Мы внедряем единые стандарты школьного питания в масштабах всей страны.
-        Каждый ребёнок должен иметь доступ к горячему, полезному обеду.»
-      </p>
-    </div>
-  </div>
+      <div class="card">
+        <div
+          class="card-front"
+          style="background-image: url('./assets/img/int-3.jpg')"
+        >
+          <h3>Министерство образования</h3>
+        </div>
+        <div class="card-back">
+          <h3>Министерство образования</h3>
+          <p>
+            «Мы внедряем единые стандарты школьного питания в масштабах всей
+            страны. Каждый ребёнок должен иметь доступ к горячему, полезному
+            обеду.»
+          </p>
+        </div>
+      </div>
 
-  <div class="card">
-    <div class="card-front" style="background-image: url('./assets/img/int-4.jpg');">
-      <h3>Родитель</h3>
-    </div>
-    <div class="card-back">
-      <h3>Родитель</h3>
-      <p>
-        «Я спокойна, зная, что ребёнок получает полноценный обед в школе.
-        Это избавляет от перекусов и формирует полезные привычки.»
-      </p>
-    </div>
-  </div>
+      <div class="card">
+        <div
+          class="card-front"
+          style="background-image: url('./assets/img/int-4.jpg')"
+        >
+          <h3>Родитель</h3>
+        </div>
+        <div class="card-back">
+          <h3>Родитель</h3>
+          <p>
+            «Я спокойна, зная, что ребёнок получает полноценный обед в школе.
+            Это избавляет от перекусов и формирует полезные привычки.»
+          </p>
+        </div>
+      </div>
 
-  <div class="card">
-    <div class="card-front" style="background-image: url('./assets/img/int-5.jpg');">
-      <h3>Ученик</h3>
-    </div>
-    <div class="card-back">
-      <h3>Ученик</h3>
-      <p>
-        «Теперь в столовой вкусно и разнообразно. Мне нравится, что есть суп, горячее и фрукты.
-        Раньше часто пропускал обеды, а теперь жду их каждый день.»
-      </p>
-    </div>
-  </div>
+      <div class="card">
+        <div
+          class="card-front"
+          style="background-image: url('./assets/img/int-5.jpg')"
+        >
+          <h3>Ученик</h3>
+        </div>
+        <div class="card-back">
+          <h3>Ученик</h3>
+          <p>
+            «Теперь в столовой вкусно и разнообразно. Мне нравится, что есть
+            суп, горячее и фрукты. Раньше часто пропускал обеды, а теперь жду их
+            каждый день.»
+          </p>
+        </div>
+      </div>
 
-  <div class="card">
-    <div class="card-front" style="background-image: url('./assets/img/int-6.jpg');">
-      <h3>Представитель общепита</h3>
-    </div>
-    <div class="card-back">
-      <h3>Представитель общепита</h3>
-      <p>
-        «Для нас главное — свежие продукты и контроль качества.
-        Мы ежедневно готовим обеды, чтобы дети ели полезно и вкусно.»
-      </p>
-    </div>
-  </div>
-</section>
+      <div class="card">
+        <div
+          class="card-front"
+          style="background-image: url('./assets/img/int-6.jpg')"
+        >
+          <h3>Представитель общепита</h3>
+        </div>
+        <div class="card-back">
+          <h3>Представитель общепита</h3>
+          <p>
+            «Для нас главное — свежие продукты и контроль качества. Мы ежедневно
+            готовим обеды, чтобы дети ели полезно и вкусно.»
+          </p>
+        </div>
+      </div>
+    </section>
 
+ 
 
-<section>
+    <section class="gallery" id="contact">
+      <div class="gallery-container">
+        <a href="https://example.com/food" class="gallery-item">
+          <img src="./assets/img/scool.jpg" alt="Питание" />
+          <div class="overlay">
+            <span>Чем удивляют новые школы в Беларуси</span>
+          </div>
+        </a>
 
-</section>
+        <a href="https://example.com/health" class="gallery-item">
+          <img src="./assets/img/voencore.jpg" alt="Здоровье" />
+          <div class="overlay">
+            <span>"Военкор-2025" глазами журналиста</span>
+          </div>
+        </a>
 
+        <a href="https://example.com/menu" class="gallery-item">
+          <img src="./assets/img/hunting.png" alt="Меню" />
+          <div class="overlay">
+            <span>Отправили корреспондента Леру на медведя</span>
+          </div>
+        </a>
 
-<section class="gallery" id="contact">
-  <div class="gallery-container">
-    <a href="https://example.com/food" class="gallery-item">
-      <img src="./assets/img/scool.jpg" alt="Питание">
-      <div class="overlay"><span>Чем удивляют новые школы в Беларуси</span></div>
-    </a>
-
-    <a href="https://example.com/health" class="gallery-item">
-      <img src="./assets/img/voencore.jpg" alt="Здоровье">
-      <div class="overlay"><span>"Военкор-2025" глазами журналиста</span></div>
-    </a>
-
-    <a href="https://example.com/menu" class="gallery-item">
-      <img src="./assets/img/hunting.png" alt="Меню">
-      <div class="overlay"><span>Отправили корреспондента Леру на медведя</span></div>
-    </a>
-
-    <a href="https://example.com/support" class="gallery-item">
-      <img src="./assets/img/PDD.jpg" alt="Поддержка">
-      <div class="overlay"><span>НОВШЕСТВА ПДД</span></div>
-    </a>
-  </div>
-</section>
-
-
+        <a href="https://example.com/support" class="gallery-item">
+          <img src="./assets/img/PDD.jpg" alt="Поддержка" />
+          <div class="overlay"><span>НОВШЕСТВА ПДД</span></div>
+        </a>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -572,10 +639,9 @@
           © 2024 Живой репортаж | Школьное питание в Беларуси
         </p>
         <p style="opacity: 0.7">Заботимся о здоровье наших детей</p>
-
-     
       </div>
     </footer>
     <script src="index.js"></script>
+  
   </body>
 </html>
