@@ -1,7 +1,13 @@
-@import url("/fonts.css");
 @import url("/food-galerey.css");
 @import url("/interview.css");
 @import url("/food.css");
+
+@font-face {
+  font-family: criun;
+  src: url('./assets/fonts/Cruinn-Medium.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -101,12 +107,12 @@ nav.scrolled {
   display: flex;
   gap: 40px;
   list-style: none;
-  align-items: center; /* ✅ выравнивание по центру */
+  align-items: center; 
 }
 
 .nav-links li {
   display: flex;
-  align-items: center; /* ✅ фикс для текста внутри */
+  align-items: center;
 }
 
 .nav-links a {
@@ -116,7 +122,7 @@ nav.scrolled {
   position: relative;
   transition: all 0.3s ease;
   display: inline-block;
-  line-height: 1.2; /* ✅ одинаковая высота строки */
+  line-height: 1.2; 
 }
 
 .nav-links a::after {
@@ -400,7 +406,7 @@ nav.scrolled {
   line-height: 1.8;
 }
 
-/* Menu Section */
+
 .menu {
   padding: 100px 50px;
   background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%);
@@ -714,7 +720,7 @@ footer {
   }
 
   .hero-content {
-    grid-template-columns: 1fr; /* одна колонка */
+    grid-template-columns: 1fr; 
     gap: 40px;
     padding: 150px 20px;
     text-align: center;
@@ -769,7 +775,7 @@ footer {
   }
 }
 
-/* Loading Animation */
+
 .loader {
   position: fixed;
   top: 0;
@@ -804,7 +810,7 @@ footer {
   }
 }
 
-/* Parallax Effects */
+
 .parallax-element {
   transition: transform 0.6s ease-out;
 }
@@ -818,7 +824,7 @@ footer {
 
 .gallery-container {
   display: grid;
-  grid-template-columns: 1fr; /* по умолчанию 1 колонка */
+  grid-template-columns: 1fr; 
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -841,7 +847,7 @@ footer {
   transition: transform 0.5s ease;
 }
 
-/* затемнение и текст при наведении */
+
 .gallery-item .overlay {
   position: absolute;
   top: 0;
@@ -872,13 +878,13 @@ footer {
 /* === Адаптивность === */
 @media (min-width: 480px) {
   .gallery-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (min-width: 768px) {
   .gallery-container {
-    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    grid-template-columns: repeat(3, 1fr); 
   }
   .gallery-item .overlay span {
     font-size: 1.4rem;
@@ -887,7 +893,7 @@ footer {
 
 @media (min-width: 1200px) {
   .gallery-container {
-    grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+    grid-template-columns: repeat(4, 1fr); 
   }
   .gallery-item .overlay span {
     font-size: 1.6rem;

@@ -8,7 +8,7 @@
 
 .card {
   position: relative;
-  height: 320px; /* повыше */
+  height: 320px; 
   border-radius: 14px;
   overflow: hidden;
   cursor: pointer;
