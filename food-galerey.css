@@ -1,0 +1,83 @@
+.food-gallery {
+  background: #f8f8f8;
+  padding: 60px 0;
+}
+
+.main {
+  display: flex;
+  overflow: hidden;
+  height: 60vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.main img {
+  width: 100%;
+  display: block;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.caption {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px 12px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.img-wrap:hover img {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.img-wrap:hover .caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* анимация колонок */
+.main .single-column {
+  flex: 1;
+  animation: var(--animation, none) 18s infinite linear;
+}
+
+.main .single-column:hover {
+  animation-play-state: paused;
+}
+
+.main .single-column:nth-of-type(odd) {
+  align-self: flex-end;
+  --direction: 50%;
+}
+
+@keyframes slide {
+  to {
+    transform: translateY(var(--direction, -50%));
+  }
+}
+
+/* адаптив */
+@media (max-width: 768px) {
+  .main {
+    height: 40vh;
+  }
+  .caption {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+}
