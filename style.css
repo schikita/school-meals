@@ -1,6 +1,6 @@
-@import url("/food-galerey.css");
-@import url("/interview.css");
-@import url("/food.css");
+@import url("./food-galerey.css");
+@import url("./interview.css");
+@import url("./food.css");
 
 @font-face {
   font-family: criun;
